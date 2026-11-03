@@ -3,166 +3,440 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-<title>Exploro — Pre-owned furniture &amp; electronics near you | Bengaluru</title>
-<meta name="description" content="Exploro is a marketplace for pre-owned furniture, electronics and home essentials from people near you. Opening first in Bengaluru — coming soon.">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<title>exploro — Launching 25 December 2026</title>
+<meta name="description" content="exploro is a hyperlocal marketplace for pre-owned furniture, electronics and home essentials from people near you. Closer to what you need. Launching 25 December 2026 in Bengaluru.">
+<meta name="theme-color" content="#0A1220">
 <link rel="canonical" href="https://exploro.in/">
-<meta name="theme-color" content="#0D0E11" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#F3F0EA" media="(prefers-color-scheme: light)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Exploro">
+<meta property="og:site_name" content="exploro">
 <meta property="og:url" content="https://exploro.in/">
-<meta property="og:title" content="Exploro — Closer to what you need">
-<meta property="og:description" content="Pre-owned furniture, electronics and home essentials from people near you. Opening first in Bengaluru.">
-<meta property="og:image" content="https://exploro.in/assets/og-image.jpg">
+<meta property="og:title" content="Unwrap exploro this Christmas">
+<meta property="og:description" content="Closer to what you need. Pre-owned, nearby — launching 25 December 2026.">
+<meta property="og:image" content="https://exploro.in/assets/og-xmas.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Exploro — Closer to what you need. A cosy living room with a green sofa and a floor lamp.">
-<meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Exploro — Closer to what you need">
-<meta name="twitter:description" content="Pre-owned furniture, electronics and home essentials from people near you. Opening first in Bengaluru.">
-<meta name="twitter:image" content="https://exploro.in/assets/og-image.jpg">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://exploro.in/#org",
-      "name": "Exploro",
-      "url": "https://exploro.in/",
-      "logo": "https://exploro.in/assets/favicon.svg",
-      "sameAs": [
-        "https://www.instagram.com/exploro_india",
-        "https://www.linkedin.com/company/exploro-india/about"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "name": "Exploro",
-      "url": "https://exploro.in/",
-      "publisher": { "@id": "https://exploro.in/#org" }
-    }
-  ]
-}
-</script>
-<script src="./vendor/react.js"></script>
-<script src="./vendor/react-dom.js"></script>
-<script src="./support.js"></script>
+<meta name="twitter:title" content="Unwrap exploro this Christmas">
+<meta name="twitter:description" content="Closer to what you need. Launching 25 December 2026.">
+<meta name="twitter:image" content="https://exploro.in/assets/og-xmas.jpg">
 <script
   defer
   data-website-id="dfid_XoITOwJkZuNcs5AxoiJBS"
   data-domain="exploro.in"
   src="https://datafa.st/js/script.js">
 </script>
+<script>
+  /* Serve React / ReactDOM / Babel from /vendor instead of the CDN */
+  window.__resources = {
+    "https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js": "vendor/react.production.min.js",
+    "https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js": "vendor/react-dom.production.min.js",
+    "https://cdn.jsdelivr.net/npm/@babel/standalone@7.29.0/babel.min.js": "vendor/babel.min.js"
+  };
+</script>
+<script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=Schibsted+Grotesk:wght@600;700;800&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0}
+body{margin:0;overflow:hidden;background:#080B10}
 .ex,.ex *{box-sizing:border-box}
-.ex{font-family:'Instrument Sans',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;transition:background-color .8s ease,color .8s ease}
+.ex{font-family:'Instrument Sans',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
 .qs{font-family:'Quicksand','Instrument Sans',ui-sans-serif,system-ui,sans-serif}
-.ex button{font:inherit;cursor:pointer}
-.ex :focus-visible{outline:2px solid #37E2BB;outline-offset:3px}
-.fade{transition:opacity .9s ease}
-.tc{transition:color .8s ease,background-color .8s ease,border-color .8s ease}
-@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.r1{animation:rise .9s ease both}.r2{animation:rise .9s .12s ease both}.r3{animation:rise .9s .24s ease both}.r4{animation:rise .9s .36s ease both}
+.dg{font-family:'Schibsted Grotesk','Instrument Sans',ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-0.045em}
+.ex a:focus-visible{outline:2px solid #37E2BB;outline-offset:3px;border-radius:10px}
+
+/* entrance */
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.r1{animation:rise .9s ease both}.r2{animation:rise .9s .1s ease both}.r3{animation:rise .9s .2s ease both}.r4{animation:rise .9s .32s ease both}.r5{animation:rise .9s .44s ease both}.r6{animation:rise .9s .56s ease both}
+
+/* sky */
+@keyframes drift{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(4%,2%,0) scale(1.08)}}
+.aur{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;animation:drift 18s ease-in-out infinite}
+@keyframes star{0%,100%{opacity:.18}50%{opacity:.95}}
+.st{position:absolute;border-radius:50%;background:#fff;pointer-events:none;animation:star ease-in-out infinite}
+.moon{position:absolute;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 36% 34%,#FFFDF6 0%,#F4EEDD 40%,#DCD3BD 78%,#C9BFA6 100%);box-shadow:0 0 40px 8px rgba(255,240,205,.22),0 0 140px 40px rgba(255,226,170,.10)}
+.moon::before,.moon::after{content:"";position:absolute;border-radius:50%;background:rgba(170,158,130,.28)}
+.moon::before{width:22%;height:22%;left:56%;top:24%}
+.moon::after{width:14%;height:14%;left:30%;top:60%}
+
+/* garland */
+@keyframes bulb{0%,100%{opacity:.55;filter:brightness(.8)}50%{opacity:1;filter:brightness(1.25)}}
+.bulb{position:absolute;width:8px;height:12px;margin-left:-4px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;pointer-events:none;animation:bulb ease-in-out infinite;transform-origin:50% 0}
+.bulb::before{content:"";position:absolute;left:1.5px;top:-3px;width:5px;height:4px;border-radius:1px;background:#3A3F44}
+
+/* tree + lamp in the render */
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 .float{animation:float 8s ease-in-out infinite}
-/* lamp switching on: a short flicker, then a steady warm glow */
-@keyframes flick{0%{opacity:0}8%{opacity:.85}12%{opacity:.15}20%{opacity:1}26%{opacity:.45}34%{opacity:1}100%{opacity:1}}
-@keyframes breathe{0%,100%{opacity:1}50%{opacity:.86}}
-.glow{opacity:0;transition:opacity .35s ease}
-.glow.on{animation:flick 1.1s .45s ease both,breathe 5s 1.8s ease-in-out infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(55,226,187,.55)}70%{box-shadow:0 0 0 10px rgba(55,226,187,0)}100%{box-shadow:0 0 0 0 rgba(55,226,187,0)}}
-.pulse{animation:pulse 2.4s infinite}
-.knob{transition:transform .45s cubic-bezier(.5,1.6,.4,1),background-color .6s ease}
-.lk{text-decoration:none;display:inline-flex;align-items:center;gap:7px;min-height:32px}
-.lk:hover{text-decoration:underline;text-underline-offset:3px}
-@media (max-width:860px){.ex{height:auto!important;min-height:100svh!important}.grid{grid-template-columns:1fr!important;grid-template-rows:auto auto!important;gap:12px 0!important;padding-top:clamp(12px,4vh,40px)!important;text-align:center}.lead{align-items:center!important;padding-bottom:0!important}.foot{justify-content:center!important;text-align:center;padding-top:24px!important}}
-@media (max-width:420px){.ex header{gap:8px!important}.ex header .qs{font-size:23px!important}.foot{flex-direction:column}}
-@media (prefers-reduced-motion:reduce){.r1,.r2,.r3,.r4,.float,.pulse{animation:none}.glow.on{animation:none;opacity:1}.fade,.ex,.tc,.knob{transition:none}}
+@keyframes tw{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:1;transform:scale(1.15)}}
+.tw{position:absolute;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:radial-gradient(circle,#FFF3C9 0%,#FFD27A 45%,rgba(255,200,110,0) 72%);animation:tw ease-in-out infinite;pointer-events:none;mix-blend-mode:screen}
+@keyframes breathe{0%,100%{opacity:1}50%{opacity:.8}}
+.glow{animation:breathe 5s ease-in-out infinite;pointer-events:none;mix-blend-mode:screen}
+
+/* headline shimmer */
+@keyframes sheen{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.shine{background:linear-gradient(100deg,#37E2BB 0%,#9FF5DF 22%,#F3D592 40%,#37E2BB 60%,#9FF5DF 80%,#37E2BB 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s linear infinite}
+
+/* countdown */
+@keyframes tick{0%{transform:translateY(-40%) rotateX(70deg);opacity:0}100%{transform:none;opacity:1}}
+.tick{display:inline-block;animation:tick .5s cubic-bezier(.2,.8,.2,1)}
+.unit{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0;padding:clamp(14px,2vh,20px) 8px clamp(12px,1.6vh,16px);border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.085) 0%,rgba(255,255,255,.035) 50%,rgba(255,255,255,.02) 100%);border:1px solid rgba(255,255,255,.10);box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 24px 50px -30px rgba(0,0,0,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);overflow:hidden;perspective:300px}
+.unit::before{content:"";position:absolute;left:14%;right:14%;top:0;height:1px;background:linear-gradient(90deg,rgba(233,201,143,0),rgba(233,201,143,.8),rgba(233,201,143,0))}
+.unit::after{content:"";position:absolute;left:0;right:0;top:calc(50% - 10px);height:1px;background:rgba(0,0,0,.35);box-shadow:0 1px 0 rgba(255,255,255,.04)}
+.num{font-size:clamp(38px,min(4.2vw,6.6vh),64px);font-weight:700;line-height:1;color:#FFFFFF}
+.lab{font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8F9693}
+
+.lk{color:#A3A8A6;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;min-width:40px;border-radius:12px}.lk:hover{color:#FFFFFF}
+.btn{display:inline-flex;align-items:center;gap:9px;height:48px;padding:0 20px 0 16px;border-radius:14px;text-decoration:none;font-weight:600;font-size:15px;transition:transform .2s,background .2s,border-color .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-p{background:#37E2BB;color:#06201A}.btn-p:hover{background:#5BEBC9}
+.btn-g{color:#F4F4F0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04)}.btn-g:hover{border-color:rgba(255,255,255,.32)}
+
+/* santa + magic */
+.santa{position:absolute;left:0;top:0;width:clamp(180px,21vw,340px);aspect-ratio:916/463;transform-origin:50% 50%;will-change:transform;pointer-events:none;z-index:8;filter:drop-shadow(0 16px 24px rgba(0,0,0,.5)) drop-shadow(0 0 22px rgba(255,220,150,.22))}
+.santa img{width:100%;height:100%;display:block}
+.gift{position:absolute;left:0;top:0;width:34px;height:30px;margin:-15px 0 0 -17px;border-radius:5px;pointer-events:none;will-change:transform,opacity;box-shadow:inset 0 -6px 0 rgba(0,0,0,.14),0 8px 16px rgba(0,0,0,.45)}
+.gift::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:7px;margin-left:-3.5px;background:var(--rb)}
+.gift::after{content:"";position:absolute;top:34%;left:0;right:0;height:7px;background:var(--rb)}
+.gift i{position:absolute;left:50%;top:-9px;width:20px;height:11px;margin-left:-10px;border:3px solid var(--rb);border-bottom:0;border-radius:10px 10px 0 0}
+@keyframes ho{0%{opacity:0;transform:translate(-50%,0) scale(.6)}15%{opacity:1;transform:translate(-50%,-10px) scale(1.05)}25%{transform:translate(-50%,-14px) scale(1)}80%{opacity:1}100%{opacity:0;transform:translate(-50%,-46px) scale(1)}}
+.ho{position:absolute;left:0;top:0;padding:8px 14px;border-radius:14px 14px 14px 4px;background:#FFFFFF;color:#18181B;font:700 15px/1 'Quicksand',sans-serif;white-space:nowrap;pointer-events:none;box-shadow:0 10px 24px rgba(0,0,0,.35);animation:ho 1.5s ease forwards}
+
+.hint-touch{display:none}
+@media (hover:none){.hint-mouse{display:none}.hint-touch{display:inline}}
+
+/* ---------- mobile / tablet ---------- */
+@media (max-width:900px){
+  body{overflow-x:hidden;overflow-y:auto}
+  .main{height:auto!important;min-height:100vh!important;min-height:100svh!important}
+  .grid{flex:none!important;display:flex!important;flex-direction:column;align-items:stretch!important;padding-top:4px!important;padding-bottom:clamp(96px,16vh,140px)!important;gap:10px!important}
+  .visual{order:-1;height:auto!important;flex-shrink:0;margin-top:4px}
+  .visual .float{width:min(100%,520px,calc(36svh * 4 / 3))!important}
+  .lead{align-items:center!important;text-align:center;padding-bottom:0!important}
+  .lead p{margin-left:auto!important;margin-right:auto!important}
+  .cdwrap{align-items:center;width:100%}
+  .cd{width:100%;max-width:440px;grid-template-columns:repeat(4,minmax(0,1fr))!important}
+  .ctas{justify-content:center}
+  .moon{right:6vw!important;top:108px!important;width:40px!important;height:40px!important}
+  .lk span{display:none}
+  .footer{justify-content:center!important;text-align:center}
+  .santa{width:clamp(130px,38vw,200px)}
+}
+@media (max-width:420px){
+  .unit{border-radius:16px;padding:12px 4px 10px}
+  .num{font-size:30px}
+  .lab{font-size:9.5px;letter-spacing:.1em}
+  .bulb:nth-child(even){display:none}
+  .btn{height:44px;font-size:14px;padding:0 16px 0 13px}
+}
+@media (max-height:640px) and (min-width:901px){.copy{display:none}}
+@media (prefers-reduced-motion:reduce){
+  .r1,.r2,.r3,.r4,.r5,.r6,.float,.tick,.glow,.tw,.aur,.st,.bulb,.shine{animation:none}
+  .santa,.fx,.hintrow{display:none}
+}
 </style>
 </helmet>
-<main class="ex" aria-labelledby="t" style="position: relative; height: 100vh; min-height: 560px; overflow: hidden; background-color: {{bg}}; color: {{fg}}; display: flex; flex-direction: column">
-  <!-- page-level warm spill from the lamp (dark only) -->
-  <span class="glow {{lampCls}}" aria-hidden="true" style="position: absolute; left: 34%; top: -12%; width: 60%; height: 110%; background: radial-gradient(closest-side, rgba(255,184,96,.16), rgba(255,184,96,0)); pointer-events: none"></span>
-  <span class="fade" aria-hidden="true" style="position: absolute; right: -10%; top: 10%; width: 70%; height: 90%; background: radial-gradient(closest-side, rgba(55,226,187,.08), rgba(55,226,187,0)); opacity: {{darkOp}}; pointer-events: none"></span>
+<main class="ex main" ref="{{setRoot}}" aria-labelledby="t" style="position: relative; height: 100vh; min-height: 620px; overflow: hidden; background: linear-gradient(180deg, #0A1220 0%, #0C141A 38%, #0B0F13 70%, #090B0E 100%); color: #F4F4F0; display: flex; flex-direction: column">
 
-  <header class="r1" style="position: relative; z-index: 3; display: flex; align-items: center; gap: 10px; padding: clamp(20px, 3.4vh, 36px) clamp(20px, 4.5vw, 72px)">
-    <span style="position: relative; height: 30px; width: 40px; flex: none">
-      <img class="fade" src="./assets/2e25d1af8f3f493431c4b0bbaf1a7459.svg" alt="" style="position: absolute; left: 0; top: 0; height: 30px; width: auto; opacity: {{darkOp}}">
-      <img class="fade" src="./assets/adf043e9fdb218e605bec3f4d3197049.svg" alt="" style="position: absolute; left: 0; top: 0; height: 30px; width: auto; opacity: {{lightOp}}">
-    </span>
-    <span class="qs tc" style="font-size: 27px; font-weight: 700; letter-spacing: -0.02em; color: {{strong}}">exploro</span>
+  <!-- sky -->
+  <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; overflow: hidden">
+    <span class="aur" style="left: 20%; top: -18%; width: 70%; height: 46%; background: radial-gradient(closest-side, rgba(55,226,187,.20), rgba(55,226,187,0))"></span>
+    <span class="aur" style="left: 48%; top: -8%; width: 52%; height: 38%; background: radial-gradient(closest-side, rgba(70,140,255,.13), rgba(70,140,255,0)); animation-duration: 24s; animation-delay: -6s"></span>
+    <span class="aur" style="left: 44%; top: 20%; width: 46%; height: 56%; background: radial-gradient(closest-side, rgba(255,190,110,.12), rgba(255,190,110,0)); animation-duration: 14s"></span>
+    <sc-for list="{{stars}}" as="s" hint-placeholder-count="46"><span class="st" style="left: {{s.x}}; top: {{s.y}}; width: {{s.s}}; height: {{s.s}}; animation-duration: {{s.d}}; animation-delay: {{s.delay}}"></span></sc-for>
+    <span class="moon" style="right: 7%; top: 13%; width: clamp(64px, 7.2vw, 116px); height: clamp(64px, 7.2vw, 116px)"></span>
+    <svg width="100%" height="100%" style="position: absolute; inset: 0; opacity: .22; mix-blend-mode: overlay"><filter id="xn"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .35 0"/></filter><rect width="100%" height="100%" filter="url(#xn)"/></svg>
+  </div>
+
+  <!-- string lights along the top -->
+  <div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 40px; z-index: 4; pointer-events: none">
+    <svg width="100%" height="30" viewBox="0 0 100 30" preserveAspectRatio="none" style="position: absolute; left: 0; top: 0; overflow: visible"><path d="M0 0 Q12.5 44 25 0 Q37.5 44 50 0 Q62.5 44 75 0 Q87.5 44 100 0" fill="none" stroke="#2C3136" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>
+    <sc-for list="{{bulbs}}" as="b" hint-placeholder-count="28"><span class="bulb" style="left: {{b.x}}; top: {{b.y}}; background: {{b.c}}; box-shadow: 0 0 10px 2px {{b.g}}, 0 0 26px 6px {{b.g2}}; animation-duration: {{b.d}}; animation-delay: {{b.delay}}; transform: rotate({{b.r}})"></span></sc-for>
+  </div>
+
+  <!-- snowy ground -->
+  <svg aria-hidden="true" viewBox="0 0 1440 160" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: 0; width: 100%; height: clamp(90px, 15vh, 150px); z-index: 2; pointer-events: none">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B252C"/><stop offset="1" stop-color="#0E1317"/></linearGradient>
+      <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#25323A"/><stop offset=".35" stop-color="#18222A"/><stop offset="1" stop-color="#0D1115"/></linearGradient>
+    </defs>
+    <path d="M0 70 C180 30 330 40 520 62 C720 86 880 34 1080 44 C1240 52 1360 70 1440 58 L1440 160 L0 160 Z" fill="url(#g1)"/>
+    <path d="M0 104 C220 72 420 86 640 98 C860 110 1040 76 1240 84 C1340 88 1400 96 1440 92 L1440 160 L0 160 Z" fill="url(#g2)"/>
+    <path d="M0 104 C220 72 420 86 640 98 C860 110 1040 76 1240 84 C1340 88 1400 96 1440 92" fill="none" stroke="rgba(230,245,255,.16)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+  </svg>
+
+  <!-- snow + santa's magic trail + gifts -->
+  <div class="fx" aria-hidden="true" style="position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 7">
+    <canvas ref="{{setCanvas}}" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%"></canvas>
+    <div ref="{{setGiftLayer}}" style="position: absolute; inset: 0"></div>
+    <div class="santa" ref="{{setSanta}}"><img src="assets/santa-sleigh.webp" alt=""></div>
+  </div>
+
+  <header class="r1" style="position: relative; z-index: 9; display: flex; align-items: center; gap: 10px; padding: clamp(40px, 5.6vh, 52px) clamp(20px, 4.5vw, 72px) 10px">
+    <img src="assets/exploro-mark-white.svg" alt="" style="height: 30px; width: auto">
+    <span class="qs" style="font-size: 27px; font-weight: 700; letter-spacing: -0.02em; color: #FFFFFF">exploro</span>
     <span style="flex: 1"></span>
-    <button onClick="{{toggle}}" role="switch" aria-checked="{{darkStr}}" aria-label="Dark mode" title="{{switchTitle}}" class="tc" style="position: relative; width: 74px; height: 38px; border-radius: 999px; border: 1px solid {{line}}; background-color: {{track}}; padding: 0">
-      <span aria-hidden="true" style="position: absolute; left: 11px; top: 10px; display: flex"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{{sunIcon}}" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span>
-      <span aria-hidden="true" style="position: absolute; right: 11px; top: 10px; display: flex"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{{moonIcon}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg></span>
-      <span class="knob" aria-hidden="true" style="position: absolute; top: 3px; left: 3px; width: 30px; height: 30px; border-radius: 999px; background-color: {{knob}}; box-shadow: 0 2px 8px rgba(0,0,0,.25); transform: translateX({{knobX}}); display: flex; align-items: center; justify-content: center">
-        <sc-if value="{{isDark}}" hint-placeholder-val="{{ true }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="#121317" stroke="#121317" stroke-width="2" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg></sc-if>
-        <sc-if value="{{isLight}}" hint-placeholder-val="{{ false }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="#FFFFFF"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></sc-if>
-      </span>
-    </button>
+    <nav aria-label="Social" style="display: flex; gap: 10px; font-size: 14px">
+      <a class="lk" href="https://www.instagram.com/exploro_india" target="_blank" rel="noopener noreferrer" aria-label="exploro on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+      <a class="lk" href="https://www.linkedin.com/company/exploro-india/about" target="_blank" rel="noopener noreferrer" aria-label="exploro on LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><span>LinkedIn</span></a>
+    </nav>
   </header>
 
-  <div class="grid" style="position: relative; z-index: 1; flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.25fr); align-items: center; gap: 0 2vw; padding: 0 clamp(20px, 4.5vw, 72px)">
-    <div class="lead" style="display: flex; flex-direction: column; align-items: flex-start; gap: clamp(16px, 2.6vh, 28px); padding-bottom: 4vh">
-      <span class="r2 tc" style="display: inline-flex; align-items: center; gap: 10px; height: 34px; padding: 0 16px 0 12px; border-radius: 999px; border: 1px solid {{pillBd}}; background-color: {{pillBg}}; font-size: 12.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: {{accent}}"><span class="pulse" style="width: 8px; height: 8px; border-radius: 9px; background: #37E2BB"></span>Coming soon</span>
-      <h1 id="t" class="qs r3 tc" style="margin: 0; font-size: clamp(48px, min(6.4vw, 10.5vh), 104px); line-height: .98; font-weight: 700; letter-spacing: -0.035em; color: {{strong}}">Closer to what you <span class="tc" style="color: {{accentBig}}">need.</span></h1>
-      <p class="r4 tc" style="margin: 0; max-width: 440px; font-size: clamp(16px, 2.1vh, 19px); line-height: 1.55; color: {{muted}}">Pre-owned furniture, electronics and home essentials — from people near you. Opening first in Bengaluru.</p>
-      <p class="r4 tc" aria-live="polite" style="margin: 0; font-size: 13px; color: {{hint}}">{{hintText}}</p>
+  <div class="grid" style="position: relative; z-index: 5; flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: center; gap: 0 2vw; padding: 0 clamp(20px, 4.5vw, 72px) clamp(70px, 11vh, 110px)">
+    <div class="lead" style="display: flex; flex-direction: column; align-items: flex-start; gap: clamp(14px, 2.4vh, 24px)">
+      <span class="r2" style="display: inline-flex; align-items: center; gap: 10px; height: 36px; padding: 0 16px 0 10px; border-radius: 999px; border: 1px solid rgba(233,201,143,.40); background: linear-gradient(90deg, rgba(233,201,143,.16), rgba(233,201,143,.05)); font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #EDD199">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EDD199" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18v4H3zM5 13h14v8H5zM12 9v12M12 9c-1.5-3-5-4-5.5-2S9 9 12 9zM12 9c1.5-3 5-4 5.5-2S15 9 12 9z"/></svg>
+        Launching 25 Dec 2026
+      </span>
+      <h1 id="t" class="qs r3" style="margin: 0; font-size: clamp(40px, min(6vw, 9.4vh), 94px); line-height: 1; font-weight: 700; letter-spacing: -0.035em; color: #FFFFFF; text-wrap: balance">Unwrap exploro <span class="shine">this Christmas.</span></h1>
+      <p class="r4 copy" style="margin: 0; max-width: 470px; font-size: clamp(15.5px, 2vh, 19px); line-height: 1.55; color: #A9AFAC"><strong style="color: #F4F4F0; font-weight: 600">Closer to what you need.</strong> Pre-owned furniture, electronics and home essentials from people near you — opening first in Bengaluru.</p>
+
+      <sc-if value="{{counting}}" hint-placeholder-val="{{ true }}">
+        <div class="r5 cdwrap" style="display: flex; flex-direction: column; gap: 12px; margin-top: 4px">
+          <div class="cd" role="timer" aria-live="off" aria-label="{{srLabel}}" style="display: grid; grid-template-columns: repeat(4, clamp(84px, 7.6vw, 118px)); gap: clamp(8px, 1vw, 14px)">
+            <sc-for list="{{units}}" as="u" hint-placeholder-count="4">
+              <div class="unit">
+                <span class="dg num" style="color: {{u.c}}"><span class="tick" key="{{u.key}}">{{u.v}}</span></span>
+                <span class="lab">{{u.label}}</span>
+              </div>
+            </sc-for>
+          </div>
+          <span style="font-size: 13px; color: #7D8481">Doors open at midnight IST · 25 December 2026</span>
+        </div>
+      </sc-if>
+      <sc-if value="{{live}}" hint-placeholder-val="{{ false }}">
+        <div class="r5 cdwrap" style="display: flex; flex-direction: column; gap: 14px; margin-top: 4px">
+          <span class="qs shine" style="font-size: clamp(26px, 3vw, 38px); font-weight: 700">We're live. Merry Christmas!</span>
+          <a class="btn btn-p" href="https://exploro.in">Start exploring<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </sc-if>
+
+      <div class="r6 ctas" style="display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center">
+        <a class="btn btn-g" href="https://www.instagram.com/exploro_india" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Follow for launch-day drops</a>
+        <span class="hintrow" aria-live="polite" style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #B4BAB7">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EDD199" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18v4H3zM5 13h14v8H5zM12 9v12M12 9c-1.5-3-5-4-5.5-2S9 9 12 9zM12 9c1.5-3 5-4 5.5-2S15 9 12 9z"/></svg>
+          <span>{{giftCount}}<span class="hint-mouse">{{hintMouse}}</span><span class="hint-touch">{{hintTouch}}</span></span>
+        </span>
+      </div>
     </div>
 
-    <div style="display: flex; align-items: center; justify-content: center; min-height: 0; height: 100%">
-      <div class="float" style="position: relative; width: min(100%, calc(76vh * 4 / 3)); aspect-ratio: 4 / 3; -webkit-mask-image: radial-gradient(75% 72% at 50% 52%, #000 62%, transparent 100%); mask-image: radial-gradient(75% 72% at 50% 52%, #000 62%, transparent 100%)">
-        <img class="fade" src="./assets/ad054ea82961177180873a9363eef212.webp" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: {{lightOp}}">
-        <img class="fade" src="./assets/d7ad1dfb94b9ebcc600e167bffc465ca.webp" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: {{darkOp}}">
-        <!-- lamp light: cone, floor pool, bulb bloom -->
-        <span class="glow {{lampCls}}" aria-hidden="true" style="position: absolute; left: 22%; top: 19.5%; width: 31%; height: 46%; background: linear-gradient(180deg, rgba(255,206,130,.42) 0%, rgba(255,196,120,.16) 55%, rgba(255,190,110,0) 100%); clip-path: polygon(39% 0, 61% 0, 100% 100%, 0 100%); filter: blur(14px); mix-blend-mode: screen; pointer-events: none"></span>
-        <span class="glow {{lampCls}}" aria-hidden="true" style="position: absolute; left: 22%; top: 55%; width: 31%; height: 18%; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,190,110,.38), rgba(255,190,110,0)); mix-blend-mode: screen; pointer-events: none"></span>
-        <span class="glow {{lampCls}}" aria-hidden="true" style="position: absolute; left: 36.9%; top: 19.8%; width: 26%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(255,246,222,.95) 0%, rgba(255,214,140,.55) 18%, rgba(255,184,96,.18) 45%, rgba(255,184,96,0) 100%); mix-blend-mode: screen; pointer-events: none"></span>
-        <!-- tap the lamp to switch it -->
-        <button onClick="{{toggle}}" aria-label="{{lampLabel}}" title="{{lampLabel}}" style="position: absolute; left: 36.9%; top: 16%; width: 9%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; border: 0; background: transparent"></button>
+    <div class="visual" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; min-height: 0; height: 100%">
+      <div class="float" style="position: relative; width: min(100%, calc(74vh * 4 / 3)); aspect-ratio: 4 / 3">
+        <span style="position: absolute; left: 10%; right: 6%; top: 18%; bottom: 8%; border-radius: 50%; background: radial-gradient(closest-side, rgba(55,226,187,.12), rgba(55,226,187,0)); filter: blur(10px)"></span>
+        <img src="assets/exploro-xmas-room.webp" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%">
+        <span class="glow" style="position: absolute; left: 22%; top: 19.5%; width: 31%; height: 46%; background: linear-gradient(180deg, rgba(255,206,130,.36) 0%, rgba(255,196,120,.13) 55%, rgba(255,190,110,0) 100%); clip-path: polygon(39% 0, 61% 0, 100% 100%, 0 100%); filter: blur(14px)"></span>
+        <span class="glow" style="position: absolute; left: 36.9%; top: 19.8%; width: 24%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(255,246,222,.85) 0%, rgba(255,214,140,.45) 18%, rgba(255,184,96,.14) 45%, rgba(255,184,96,0) 100%)"></span>
+        <span class="glow" style="position: absolute; left: 16%; top: 17%; width: 14%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(255,236,170,.9) 0%, rgba(255,210,120,.35) 30%, rgba(255,200,110,0) 100%); animation-duration: 3s"></span>
+        <span class="glow" style="position: absolute; left: 4%; top: 22%; width: 26%; height: 44%; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,200,120,.16), rgba(255,200,120,0))"></span>
+        <sc-for list="{{twinkles}}" as="w" hint-placeholder-count="20"><span class="tw" style="left: {{w.x}}; top: {{w.y}}; animation-duration: {{w.d}}; animation-delay: {{w.delay}}"></span></sc-for>
       </div>
     </div>
   </div>
 
-  <footer class="tc foot" style="position: relative; z-index: 2; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px 20px; padding: 0 clamp(20px, 4.5vw, 72px) clamp(16px, 3vh, 28px); font-size: 13.5px; color: {{hint}}">
-    <span>© 2026 Exploro · exploro.in</span>
-    <span style="display: flex; gap: 22px">
-      <a class="lk tc" href="https://www.instagram.com/exploro_india" target="_blank" rel="noopener noreferrer" style="color: {{linkC}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>Instagram</a>
-      <a class="lk tc" href="https://www.linkedin.com/company/exploro-india/about" target="_blank" rel="noopener noreferrer" style="color: {{linkC}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg>LinkedIn</a>
-    </span>
+  <footer class="footer" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 9; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 20px; padding: 0 clamp(20px, 4.5vw, 72px) clamp(14px, 2.6vh, 24px); font-size: 12.5px; color: #75807C">
+    <span>© 2026 exploro · exploro.in</span>
+    <span>Pre-owned. Nearby. Verified.</span>
   </footer>
 </main>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"startTheme":{"editor":"enum","options":["dark","light"],"default":"dark"},"$preview":{"width":1440,"height":900}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+var LAUNCH = new Date('2026-12-25T00:00:00+05:30').getTime();
+function seeded(n) { var s = n; return function () { s = (s * 16807) % 2147483647; return s / 2147483647; }; }
+function pad(n) { return n < 10 ? '0' + n : String(n); }
+
+/* stars in the upper sky */
+var R = seeded(25122026), STARS = [];
+for (var i = 0; i < 46; i++) { var z = R(); STARS.push({ x: (R() * 100).toFixed(2) + '%', y: (4 + Math.pow(R(), 1.4) * 52).toFixed(2) + '%', s: (z > 0.85 ? 2.4 : z > 0.5 ? 1.6 : 1.1) + 'px', d: (2.5 + R() * 4).toFixed(1) + 's', delay: (-R() * 6).toFixed(1) + 's' }); }
+
+/* string-light bulbs along 4 parabolic swags (matches the SVG wire: y = 4·22·t(1−t)) */
+var BC = [['#FFD27A', 'rgba(255,210,122,.75)', 'rgba(255,190,90,.28)'], ['#37E2BB', 'rgba(55,226,187,.7)', 'rgba(55,226,187,.25)'], ['#FFF3D6', 'rgba(255,243,214,.75)', 'rgba(255,236,200,.25)'], ['#FF8E7A', 'rgba(255,142,122,.7)', 'rgba(255,120,100,.25)']];
+var BULBS = [], B = seeded(99);
+for (var sw = 0; sw < 4; sw++) for (var j = 1; j <= 7; j++) {
+  var t = j / 8, c = BC[(sw * 7 + j) % 4];
+  BULBS.push({ x: (sw * 25 + t * 25).toFixed(2) + '%', y: (4 * 22 * t * (1 - t) + 1).toFixed(1) + 'px', c: c[0], g: c[1], g2: c[2], d: (1.8 + B() * 2.2).toFixed(2) + 's', delay: (-B() * 3).toFixed(2) + 's', r: ((t - 0.5) * -40).toFixed(0) + 'deg' });
+}
+
+/* fairy lights inside the tree cone (% of the render) */
+var T = seeded(7), TW = [];
+for (var k = 0; k < 20; k++) { var tt = T(), y = 22 + tt * 36, half = 1.2 + tt * 9.5; TW.push({ x: (16 + (T() * 2 - 1) * half).toFixed(2) + '%', y: y.toFixed(2) + '%', d: (1.6 + T() * 2.4).toFixed(2) + 's', delay: (-T() * 3).toFixed(2) + 's' }); }
+
+var GIFT = [['#C89A66', '#37E2BB'], ['#1C1D22', '#E9C98F'], ['#37E2BB', '#14161A'], ['#F4F1EA', '#E05A4E'], ['#0A6E5A', '#F3D592']];
+var HO = ['Ho ho ho!', 'Special delivery!', 'Merry Christmas!', 'Ho ho ho!', 'From someone nearby!'];
+var TRAIL = [[255, 231, 168], [159, 245, 223], [255, 255, 255], [255, 214, 140]];
+
 class Component extends DCLogic {
-  constructor(p) { super(p); this.state = { dark: (p.startTheme || 'dark') !== 'light' }; }
+  constructor(p) {
+    super(p);
+    var s = this;
+    this.state = { now: Date.now(), delivered: 0 };
+    this.setRoot = function (el) { s._root = el; };
+    this.setSanta = function (el) { s._el = el; };
+    this.setCanvas = function (el) { s._cv = el; };
+    this.setGiftLayer = function (el) { s._gl = el; };
+  }
+  componentDidMount() {
+    var s = this;
+    this._i = setInterval(function () { s.setState({ now: Date.now() }); }, 1000);
+    this._reduced = false;
+    try { this._reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    if (this._reduced) return;
+    this._p = { x: -360, y: 160, tx: -360, ty: 160, face: 1, tilt: 0 };
+    this._idle = -1e9; this._parts = []; this._snow = []; this._gifts = []; this._wind = 0; this._mx = 0.5; this._lastHo = -1e9; this._last = 0;
+    this._mv = function (e) {
+      if (!s._root) return;
+      var r = s._root.getBoundingClientRect();
+      s._mx = (e.clientX - r.left) / Math.max(1, r.width);
+      if (e.pointerType === 'touch') return;
+      s._p.tx = e.clientX - r.left; s._p.ty = e.clientY - r.top; s._idle = performance.now();
+    };
+    this._dn = function (e) {
+      if (!s._root || (e.target && e.target.closest && e.target.closest('a,button'))) return;
+      var r = s._root.getBoundingClientRect();
+      if (e.pointerType === 'touch') { s._p.tx = e.clientX - r.left; s._p.ty = e.clientY - r.top; s._idle = performance.now(); setTimeout(function () { s.drop(); }, 380); }
+      else s.drop();
+    };
+    try { window.addEventListener('pointermove', this._mv, { passive: true }); window.addEventListener('pointerdown', this._dn, { passive: true }); } catch (e) {}
+    var loop = function (now) { s._raf = requestAnimationFrame(loop); s.frame(now); };
+    this._raf = requestAnimationFrame(loop);
+  }
+  componentWillUnmount() {
+    clearInterval(this._i); cancelAnimationFrame(this._raf);
+    try { window.removeEventListener('pointermove', this._mv); window.removeEventListener('pointerdown', this._dn); } catch (e) {}
+  }
+  size() {
+    var cv = this._cv, root = this._root, W = root.clientWidth, H = root.clientHeight;
+    if (W === this._W && H === this._H) return;
+    this._W = W; this._H = H; this._mob = W < 900;
+    var dpr = Math.min(2, window.devicePixelRatio || 1); this._dpr = dpr;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    var n = Math.max(50, Math.min(200, Math.round(W * Math.min(H, 1000) / 7500)));
+    var snow = []; for (var i = 0; i < n; i++) snow.push(this.flake(W, H, true));
+    this._snow = snow;
+  }
+  flake(W, H, any) {
+    var z = Math.random();
+    return { x: Math.random() * W, y: any ? Math.random() * H : -10, z: z, r: 0.8 + z * 2.6, v: 0.35 + z * 1.1, ph: Math.random() * 6.28, a: 0.25 + z * 0.6 };
+  }
+  frame(now) {
+    var el = this._el, root = this._root, cv = this._cv; if (!el || !root || !cv) return;
+    this.size();
+    var W = this._W, H = this._H, p = this._p, dt = Math.min(50, now - (this._last || now)) / 16.7; this._last = now;
+    var w = el.offsetWidth, h = el.offsetHeight, mob = this._mob;
+    var skyH = mob ? Math.min(240, H * 0.3) : H * 0.75;
+
+    /* --- Santa --- */
+    var tx = p.tx, ty = p.ty;
+    if (now - this._idle > 3500) {
+      var t = now / 1000;
+      tx = W * (0.5 + 0.46 * Math.sin(t * (mob ? 0.38 : 0.28)));
+      ty = mob ? (150 + 36 * Math.sin(t * 0.9)) : H * (0.24 + 0.1 * Math.sin(t * 0.71));
+    }
+    ty = Math.max(h * 0.5 + (mob ? 96 : 30), Math.min((mob ? skyH : H - h * 0.6 - 60), ty));
+    var px = p.x, py = p.y, ease = 1 - Math.pow(1 - 0.055, dt);
+    p.x += (tx - p.x) * ease; p.y += (ty - p.y) * ease;
+    var vx = (p.x - px) / (dt || 1), vy = (p.y - py) / (dt || 1), speed = Math.sqrt(vx * vx + vy * vy);
+    if (Math.abs(vx) > 0.9) p.face = vx >= 0 ? 1 : -1;
+    p.tilt += (Math.max(-18, Math.min(18, vy * 1.3)) - p.tilt) * 0.1;
+    var bob = Math.sin(now / 240) * 3.5;
+    var ax = p.face > 0 ? w * 0.92 : w * 0.08, ay = h * 0.25;
+    var left = p.x - ax, top = p.y - ay + bob;
+    el.style.transform = 'translate3d(' + left.toFixed(1) + 'px,' + top.toFixed(1) + 'px,0) rotate(' + (p.tilt * p.face).toFixed(2) + 'deg) scaleX(' + p.face + ')';
+    var rx = p.face > 0 ? left + w * 0.06 : left + w * 0.94, ry = top + h * 0.86;
+    this._sx = p.face > 0 ? left + w * 0.12 : left + w * 0.88; this._sy = top + h * 0.5;
+    this._santaTop = top;
+
+    /* emit magic dust behind the runners */
+    var emit = speed > 0.6 ? Math.min(5, 1 + speed * 0.35) : 0.4;
+    this._acc = (this._acc || 0) + emit * dt;
+    while (this._acc >= 1) {
+      this._acc -= 1;
+      if (this._parts.length > 420) continue;
+      var c = TRAIL[(Math.random() * TRAIL.length) | 0];
+      this._parts.push({ x: rx + (Math.random() - 0.5) * 10, y: ry + (Math.random() - 0.5) * 8, vx: -p.face * (0.2 + Math.random() * 0.6) + (Math.random() - 0.5) * 0.4, vy: 0.15 + Math.random() * 0.5, life: 0, max: 40 + Math.random() * 50, r: 0.8 + Math.random() * 2.2, c: c, star: Math.random() < 0.16 });
+    }
+
+    /* --- canvas: snow with depth + wind from the pointer, then glowing dust --- */
+    var ctx = cv.getContext('2d'), dpr = this._dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
+    this._wind += (((this._mx - 0.5) * 1.6) - this._wind) * 0.02;
+    ctx.fillStyle = '#FFFFFF';
+    for (var i = 0; i < this._snow.length; i++) {
+      var f = this._snow[i];
+      f.y += f.v * dt; f.x += (Math.sin(now / 1400 + f.ph) * 0.35 + this._wind * (0.4 + f.z)) * dt;
+      if (f.y > H + 8) { this._snow[i] = this.flake(W, H, false); continue; }
+      if (f.x > W + 8) f.x = -8; else if (f.x < -8) f.x = W + 8;
+      ctx.globalAlpha = f.a; ctx.beginPath(); ctx.arc(f.x, f.y, f.r, 0, 6.2832); ctx.fill();
+    }
+    ctx.globalCompositeOperation = 'lighter';
+    for (var q = this._parts.length - 1; q >= 0; q--) {
+      var d = this._parts[q]; d.life += dt;
+      if (d.life > d.max) { this._parts.splice(q, 1); continue; }
+      d.x += d.vx * dt; d.y += d.vy * dt; d.vy += 0.008 * dt; d.vx *= 0.99;
+      var k = 1 - d.life / d.max, a = k * k, col = 'rgba(' + d.c[0] + ',' + d.c[1] + ',' + d.c[2] + ',';
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = col + (a * 0.18).toFixed(3) + ')'; ctx.beginPath(); ctx.arc(d.x, d.y, d.r * 4, 0, 6.2832); ctx.fill();
+      ctx.fillStyle = col + a.toFixed(3) + ')'; ctx.beginPath(); ctx.arc(d.x, d.y, d.r * (0.6 + k * 0.5), 0, 6.2832); ctx.fill();
+      if (d.star) {
+        var L = d.r * 5 * k; ctx.strokeStyle = col + (a * 0.9).toFixed(3) + ')'; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(d.x - L, d.y); ctx.lineTo(d.x + L, d.y); ctx.moveTo(d.x, d.y - L); ctx.lineTo(d.x, d.y + L); ctx.stroke();
+      }
+    }
+    ctx.globalCompositeOperation = 'source-over'; ctx.globalAlpha = 1;
+
+    /* --- gifts: fall, spin, bounce and stay on the snow --- */
+    for (var g = this._gifts.length - 1; g >= 0; g--) {
+      var o = this._gifts[g];
+      if (!o.rest) {
+        o.vy += 0.32 * dt; o.x += o.vx * dt; o.y += o.vy * dt; o.rot += o.vr * dt;
+        if (o.y >= o.floor) {
+          o.y = o.floor;
+          if (o.vy > 2.2) { o.vy *= -0.38; o.vx *= 0.6; o.vr *= 0.5; } else { o.rest = true; o.born = now; o.rot = o.rot % 360; o.vr = 0; }
+        }
+      } else { o.rot += (Math.round(o.rot / 90) * 90 + o.tiltRest - o.rot) * 0.15; }
+      o.el.style.transform = 'translate3d(' + o.x.toFixed(1) + 'px,' + o.y.toFixed(1) + 'px,0) rotate(' + o.rot.toFixed(1) + 'deg)';
+    }
+  }
+  drop() {
+    if (this._reduced || !this._gl || this._sx == null) return;
+    var W = this._W, H = this._H, now = performance.now();
+    var c = GIFT[(Math.random() * GIFT.length) | 0], el = document.createElement('span');
+    el.className = 'gift'; el.style.background = c[0]; el.style.setProperty('--rb', c[1]); el.innerHTML = '<i></i>';
+    var groundTop = H - Math.max(90, Math.min(150, (window.innerHeight || H) * 0.15));
+    var floor = groundTop + 58 + Math.random() * 36;
+    if (floor < this._sy + 40) floor = this._sy + 40;
+    var o = { el: el, x: Math.max(20, Math.min(W - 20, this._sx)), y: this._sy, vx: -this._p.face * (0.6 + Math.random() * 1.4) + (Math.random() - 0.5), vy: -1.5 - Math.random() * 1.5, rot: 0, vr: (Math.random() - 0.5) * 10, floor: floor, rest: false, tiltRest: (Math.random() - 0.5) * 14 };
+    this._gl.appendChild(el); this._gifts.push(o);
+    if (this._gifts.length > 80) { var old = this._gifts.shift(); old.el.remove(); }
+    for (var i = 0; i < 26; i++) { var cc = TRAIL[(Math.random() * TRAIL.length) | 0], an = Math.random() * 6.28, sp = 0.6 + Math.random() * 2.2; this._parts.push({ x: this._sx, y: this._sy, vx: Math.cos(an) * sp, vy: Math.sin(an) * sp, life: 0, max: 30 + Math.random() * 30, r: 0.8 + Math.random() * 1.8, c: cc, star: Math.random() < 0.3 }); }
+    if (now - this._lastHo > 1400) {
+      this._lastHo = now;
+      var b = document.createElement('span'), sw = this._el.offsetWidth; b.className = 'ho';
+      b.textContent = HO[this.state.delivered % HO.length];
+      b.style.left = Math.max(80, Math.min(W - 90, this._p.x - (this._p.face > 0 ? sw * 0.6 : -sw * 0.6))) + 'px';
+      b.style.top = Math.max(8, this._santaTop - 30) + 'px';
+      this._gl.appendChild(b); setTimeout(function () { b.remove(); }, 1600);
+    }
+    this.setState({ delivered: this.state.delivered + 1 });
+  }
   renderVals() {
-    var self = this, d = this.state.dark;
+    var ms = Math.max(0, LAUNCH - this.state.now), sec = Math.floor(ms / 1000);
+    var d = Math.floor(sec / 86400), h = Math.floor(sec % 86400 / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60;
+    var parts = [[d, 'Days'], [h, 'Hours'], [m, 'Mins'], [s, 'Secs']];
+    var n = this.state.delivered;
     return {
-      isDark: d, isLight: !d, darkStr: d ? 'true' : 'false',
-      toggle: function () { self.setState({ dark: !self.state.dark }); },
-      bg: d ? '#0D0E11' : '#F3F0EA', fg: d ? '#F4F4F0' : '#18181B', strong: d ? '#FFFFFF' : '#141416',
-      muted: d ? '#A9A9A2' : '#4A4A50', hint: d ? '#6F6F6B' : '#6B6B70', line: d ? '#2A2B31' : '#D9D4CA',
-      accent: d ? '#37E2BB' : '#0A6E5A', accentBig: d ? '#37E2BB' : '#0A6E5A',
-      pillBd: d ? '#263B35' : '#BFE3D6', pillBg: d ? 'rgba(31,42,39,.6)' : 'rgba(227,245,239,.8)',
-      linkC: d ? '#C9C9C2' : '#3A3A40',
-      track: d ? '#1A1B20' : '#FFFFFF', knob: d ? '#F2D16B' : '#18181B', knobX: d ? '36px' : '0px',
-      sunIcon: d ? '#6F6F6B' : '#18181B', moonIcon: d ? '#F2D16B' : '#9A968E',
-      switchTitle: d ? 'Switch to light mode' : 'Switch to dark mode',
-      lampCls: d ? 'on' : '', darkOp: d ? '1' : '0', lightOp: d ? '0' : '1',
-      lampLabel: d ? 'Switch the lamp off (light mode)' : 'Switch the lamp on (dark mode)',
-      hintText: d ? 'Tip: tap the lamp to switch it off.' : 'Tip: tap the lamp to switch it on.'
+      counting: ms > 0, live: ms <= 0,
+      units: parts.map(function (p, i) { return { v: i === 0 ? String(p[0]) : pad(p[0]), label: p[1], key: p[1] + p[0], c: i === 3 ? '#37E2BB' : '#FFFFFF' }; }),
+      srLabel: d + ' days, ' + h + ' hours and ' + m + ' minutes until launch on 25 December 2026',
+      stars: STARS, bulbs: BULBS, twinkles: TW,
+      setRoot: this.setRoot, setSanta: this.setSanta, setCanvas: this.setCanvas, setGiftLayer: this.setGiftLayer,
+      giftCount: n ? (n === 1 ? '1 gift delivered! ' : n + ' gifts delivered! ') : '',
+      hintMouse: n ? 'Keep clicking.' : 'Santa follows your cursor. Click to drop a gift.',
+      hintTouch: n ? 'Tap for more.' : 'Tap anywhere and Santa drops a gift.'
     };
   }
 }
